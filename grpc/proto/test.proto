@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package test;
+
+service Wait {
+    rpc DoMD5(Req) returns (Rep);
+}
+
+message Req{
+    string fromjson = 1;
+}
+
+message Rep{
+    string md5str = 1;
+}

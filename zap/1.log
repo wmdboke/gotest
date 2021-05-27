@@ -1,0 +1,7 @@
+2021-01-31T18:17:29.415+0800	info	zap/zap.go:78	log 初始化成功	{"appName": "Name"}
+{"level":"info","time":"2021-01-31T18:37:16.844+0800","file":"zap/zap.go:79","msg":"log 初始化成功","appName":"Name"}
+{"level":"info","time":"2021-01-31T18:37:53.380+0800","file":"zap/zap.go:79","msg":"log 初始化成功","appName":"Name"}
+{"level":"info","time":"2021-01-31T21:33:24.345+0800","file":"zap/zap.go:80","msg":"log 初始化成功","appName":"Name"}
+{"level":"debug","time":"2021-01-31T21:33:24.345+0800","file":"zap/zap.go:81","msg":"log debug","appName":"Name"}
+{"level":"error","time":"2021-01-31T21:33:24.345+0800","file":"zap/zap.go:82","msg":"log error","appName":"Name"}
+{"level":"error","time":"2021-01-31T21:33:47.708+0800","file":"zap/zap.go:82","msg":"log error","appName":"Name"}
