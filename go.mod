@@ -26,6 +26,7 @@ require (
 	github.com/sirupsen/logrus v1.4.2
 	github.com/smartystreets/goconvey v1.6.4 // indirect
 	github.com/spf13/cobra v0.0.6 // indirect
+	github.com/streadway/amqp v1.0.0 // indirect
 	go.etcd.io/bbolt v1.3.3 // indirect
 	go.starlark.net v0.0.0-20200306205701-8dd3e2ee1dd5 // indirect
 	go.uber.org/zap v1.15.0

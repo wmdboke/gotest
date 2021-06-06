@@ -1,11 +1,14 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"github.com/sirupsen/logrus"
 	"go-test/gormtest"
+	"go-test/pragram"
 	"os"
 	"strings"
+	"time"
 
 	//"path/filepath"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
@@ -22,13 +25,24 @@ func main() {
 	fmt.Println(os.Args)
 
 	//a := Action{Input: "aaa", Output: "bbb"}
-	logrus.Infof("server Controller start sync_____%+v", nil)
+	logrus.Infof("server Controller start sync_____%+v", os.Args)
 
 	println("_____start my test progremmor： %s", "tttttt")
 
 	name := "/v3/schemas/project/schemas/4444"
 	parts := strings.SplitN(name, "/schemas/", 2)
-	name = parts[1]
+	fmt.Println("strings.SplitN: part1 = %s, part2 = %s", name, parts[0])
+
+	// select test
+	selectX := pragram.Selectx{}
+	selectX.Msg = make(chan int)
+	ctx, canceler := context.WithCancel(context.Background())
+	selectX.Ctx = ctx
+	go selectX.SelectTest()
+	time.Sleep(time.Second * 5)
+	selectX.Msg <- 1
+	canceler()
+	select {}
 
 	// websocket test
 

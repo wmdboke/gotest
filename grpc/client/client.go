@@ -6,6 +6,7 @@ import (
 	"google.golang.org/grpc"
 	"log"
 	"os"
+	"time"
 )
 
 func main() {
@@ -27,8 +28,10 @@ func main() {
 		res = os.Args[1]
 	}
 
+	ctx, _ := context.WithTimeout(context.Background(), time.Duration(1)*time.Second)
+
 	// 调用gRPC接口
-	tr, err := t.DoMD5(context.Background(), &test.Req{Fromjson: res})
+	tr, err := t.DoMD5(ctx, &test.Req{Fromjson: res})
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
