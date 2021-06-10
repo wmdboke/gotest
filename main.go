@@ -68,9 +68,6 @@ func main() {
 	// 测试错误吗
 	//grammartest.Errors_test()
 
-	//力扣
-	//leetcode.LongestPalindrome("adfbg")
-
 	// 运行命令行 以及 fork 进程
 	//reexec_test()
 

@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func LongestPalindrome(s string) string {
+func longestPalindrome(s string) string {
 	var (
 		max string = ""
 		l   int    = len(s)

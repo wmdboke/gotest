@@ -21,12 +21,15 @@ require (
 	github.com/mattn/go-runewidth v0.0.8 // indirect
 	github.com/nacos-group/nacos-sdk-go v1.0.6
 	github.com/natefinch/lumberjack v2.0.0+incompatible
+	github.com/opentracing/opentracing-go v1.1.0 // indirect
 	github.com/peterh/liner v1.2.0 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.4.2
 	github.com/smartystreets/goconvey v1.6.4 // indirect
 	github.com/spf13/cobra v0.0.6 // indirect
 	github.com/streadway/amqp v1.0.0 // indirect
+	github.com/uber/jaeger-client-go v2.29.1+incompatible // indirect
+	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
 	go.etcd.io/bbolt v1.3.3 // indirect
 	go.starlark.net v0.0.0-20200306205701-8dd3e2ee1dd5 // indirect
 	go.uber.org/zap v1.15.0
